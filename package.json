@@ -1,0 +1,24 @@
+{
+  "name": "vue-bonc-components",
+  "version": "1.0.0",
+  "description": "基于vue项目，抽离公共组件库，进行统一维护，解决一个变更需要修改多个项目的问题。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hewuf/bonc-components.git"
+  },
+  "keywords": [
+    "bonc",
+    "components",
+    "library"
+  ],
+  "author": "hewuuhuu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hewuf/bonc-components/issues"
+  },
+  "homepage": "https://github.com/Hewuf/bonc-components#readme"
+}
