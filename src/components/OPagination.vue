@@ -17,14 +17,10 @@
 </template>
 
 <script>
-import { ElPagination } from "element-ui";
-import { scrollTo } from "@/utils/scroll-to";
+import { scrollTo } from "@/script/scrollTo.js";
 
 export default {
-  name: "Pagination",
-  components: {
-    ElPagination,
-  },
+  name: "OPagination",
   props: {
     total: {
       required: true,

@@ -1,13 +1,12 @@
-/*
- * @Author: 贺颖
- * @Date: 2024-03-07 10:02:16
- * @LastEditTime: 2024-03-07 14:03:43
- * @LastEditors: 贺颖
- * @Description: 
- */
 import vue from "rollup-plugin-vue";
+import resolve from '@rollup/plugin-node-resolve';
+import alias from "@rollup/plugin-alias";
 import commonjs from "@rollup/plugin-commonjs";
 import postcss from 'rollup-plugin-postcss';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default {
   input: "src/index.js",
@@ -22,5 +21,14 @@ export default {
       name: "bonc-components",
     },
   ],
-  plugins: [vue(), commonjs(), postcss()],
+  plugins: [
+    vue({ version: 2 }),
+    resolve(),
+    commonjs(),
+    postcss(),
+    alias({
+      entries: [
+        { find: "@", replacement: path.resolve(__dirname, "src") },
+      ]
+    })],
 };

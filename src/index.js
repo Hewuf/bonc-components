@@ -1,9 +1,9 @@
-import TableTransfer from './components/TableTransfer.vue';
-import CommonTable from './components/CommonTable.vue';
-import Pagination from './components/Pagination.vue';
+import OTableTransfer from './components/OTableTransfer.vue'; // 列表穿梭框
+import ODynamicTable from './components/ODynamicTable.vue'; // 动态表格
+import OPagination from './components/OPagination.vue'; // 分页
 
 export {
-  TableTransfer,
-  CommonTable,
-  Pagination
+  OTableTransfer,
+  ODynamicTable,
+  OPagination
 };

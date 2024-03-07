@@ -157,7 +157,7 @@
         <!-- 自定义列 -->
         <slot name="right"></slot>
       </el-table>
-      <pagination
+      <o-pagination
         v-if="showPagination === 'all' || showPagination === 'right'"
         v-show="rightTotal > 0"
         :total="rightTotal"
@@ -178,10 +178,10 @@ import {
   ElFormItem,
   ElInput,
 } from "element-ui";
-import Pagination from "./Pagination.vue";
+import OPagination from "./OPagination.vue";
 
 export default {
-  name: "TableTransfer",
+  name: "OTableTransfer",
   components: {
     ElTable,
     ElTableColumn,
@@ -189,7 +189,7 @@ export default {
     ElForm,
     ElFormItem,
     ElInput,
-    Pagination,
+    OPagination,
   },
   props: {
     // 左侧列表数据

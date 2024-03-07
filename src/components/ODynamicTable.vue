@@ -58,7 +58,7 @@
       <!-- 操作列等自定义列 -->
       <slot name="right"></slot>
     </el-table>
-    <pagination
+    <o-pagination
       v-show="ipagination.total > 0"
       :total="ipagination.total"
       :page.sync="ipagination.pageNum"
@@ -69,16 +69,16 @@
 </template>
 <script>
 import { ElTable, ElTableColumn, ElSwitch } from "element-ui";
-import Pagination from "./Pagination.vue";
+import OPagination from "./OPagination.vue";
 import { formatMoney } from "../script/commonSettings";
 
 export default {
-  name: "CommonTable",
+  name: "ODynamicTable",
   components: {
     ElTable,
     ElTableColumn,
     ElSwitch,
-    Pagination,
+    OPagination,
   },
   props: {
     ipagination: {
