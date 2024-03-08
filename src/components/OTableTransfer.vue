@@ -170,14 +170,6 @@
 </template>
 
 <script>
-import {
-  ElTable,
-  ElTableColumn,
-  ElButton,
-  ElForm,
-  ElFormItem,
-  ElInput,
-} from "element-ui";
 import OPagination from "./OPagination.vue";
 
 export default {

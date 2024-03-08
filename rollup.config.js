@@ -1,4 +1,4 @@
-import vue from "rollup-plugin-vue";
+import vuePlugin from "rollup-plugin-vue";
 import resolve from '@rollup/plugin-node-resolve';
 import alias from "@rollup/plugin-alias";
 import commonjs from "@rollup/plugin-commonjs";
@@ -22,7 +22,7 @@ export default {
     },
   ],
   plugins: [
-    vue({ version: 2 }),
+    vuePlugin({ version: 2 }),
     resolve(),
     commonjs(),
     postcss(),

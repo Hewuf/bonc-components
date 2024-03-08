@@ -68,16 +68,12 @@
   </div>
 </template>
 <script>
-import { ElTable, ElTableColumn, ElSwitch } from "element-ui";
 import OPagination from "./OPagination.vue";
-import { formatMoney } from "../script/commonSettings";
+import { formatMoney } from "@/script/commonSettings";
 
 export default {
   name: "ODynamicTable",
   components: {
-    ElTable,
-    ElTableColumn,
-    ElSwitch,
     OPagination,
   },
   props: {
