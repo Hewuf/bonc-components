@@ -1,5 +1,5 @@
 {
-  "name": "vue-bonc-components",
+  "name": "bonc-oil-components",
   "version": "1.0.0",
   "description": "基于vue项目，抽离公共组件库，进行统一维护，解决一个变更需要修改多个项目的问题。",
   "main": "index.js",

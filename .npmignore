@@ -1,0 +1,7 @@
+node_modules/
+dist/
+git/
+rollup.config.js
+package-lock.json
+
+```
