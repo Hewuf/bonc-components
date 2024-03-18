@@ -1,0 +1,167 @@
+.header-logo-container .t-logo {
+  width: 49px;
+  height: 44px;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.custom__content-background--white {
+  .common-content {
+    background-color: #FFFFFF;
+    padding: 24px;
+    overflow-y: auto;
+
+    .footer-box {
+      border: none;
+      padding: 0;
+    }
+
+    &.user-management-container {
+      .left {
+        border: none;
+        padding-top: 0;
+        padding-left: 0;
+        overflow: auto;
+      }
+
+      .left,
+      .right {
+        // height: calc(100vh - 193px);
+        height: calc(100vh - 163px);
+      }
+    }
+
+    .el-card {
+      border: none;
+      box-shadow: none;
+    }
+
+    .form-section {
+      > .el-card {
+        >  .el-card__body {
+          padding: 0 0 76px;
+        }
+      }
+
+      &::before {
+        height: 66px;
+      }
+    }
+  }
+
+  .t-layout__sider {
+    --td-brand-color-1: #F2F3F5;
+  }
+}
+
+.custom__header-background--white {
+  .t-head-menu__inner {
+    .header__title {
+      color: #191B22;
+      font-weight: 500;
+    }
+
+    --white-color: #191B22;
+  }
+
+  .t-layout__sider {
+    --td-brand-color-1: #F2F3F5;
+  }
+}
+
+.custom__operate-left-menu-btn--hide {
+  .header-operate-left {
+    display: none;
+  }
+
+  // 隐藏收缩左侧菜单按钮的情况下，小屏幕时左侧菜单宽度变为 64px，这里强制覆盖，保持原本展开逻辑
+  .side-nav__container {
+    width: 232px !important;
+  }
+
+  .tdesign-starter-sidebar-compact {
+    width: 232px;
+
+    .t-default-menu.t-is-collapsed .t-menu__item span {
+      display: block;
+    }
+
+    .t-default-menu.t-is-collapsed .t-menu .t-menu__item {
+      justify-content: left;
+    }
+  }
+}
+
+.custom__header-icon--color {
+  .header-logo-container .t-logo {
+    width: 32px;
+    height: 32px;
+    margin: 0 0 0 3px;
+  }
+
+  .t-logo-container {
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .layout-main-menu-container .main-menu-item {
+    &.active,
+    &:hover {
+      background: #F3F4F9;
+
+      .svg-icon-class {
+        color: #515A6E;
+      }
+    }
+  }
+}
+
+:root[theme-mode="dark"] {
+  .custom__content-background--white .common-content {
+    background-color: transparent;
+  }
+
+  .layout-main-menu-container .main-menu-item {
+    &.active,
+    &:hover {
+      background: var(--primary-btn);
+
+      .svg-icon-class {
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+.custom__root-menu--show {
+  .side-nav__menu-content {
+    margin-left: var(--root-menu-width);
+  }
+
+  .side-nav--hide {
+    width: var(--root-menu-width);
+
+    .side-nav__container {
+      width: var(--root-menu-width) !important;
+    }
+  }
+}
+
+.custom__dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin-right: 20px;
+
+  .custom__dialog-title {
+    font-size: 18px;
+  }
+  .el-form-item--mini.el-form-item, .el-form-item--small.el-form-item {
+    margin-bottom: 0;
+  }
+}

@@ -68,8 +68,8 @@
   </div>
 </template>
 <script>
-import OPagination from "./OPagination.vue";
-import { formatMoney } from "@/script/commonSettings";
+import OPagination from "@packages/OPagination/src/OPagination.vue";
+import { formatMoney } from "@/utils/commonSettings";
 
 export default {
   name: "ODynamicTable",

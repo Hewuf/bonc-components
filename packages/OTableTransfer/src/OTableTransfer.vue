@@ -170,17 +170,17 @@
 </template>
 
 <script>
-import OPagination from "./OPagination.vue";
+import OPagination from "@packages/OPagination/src/OPagination.vue";
 
 export default {
   name: "OTableTransfer",
   components: {
-    ElTable,
-    ElTableColumn,
-    ElButton,
-    ElForm,
-    ElFormItem,
-    ElInput,
+    //   ElTable,
+    //   ElTableColumn,
+    //   ElButton,
+    //   ElForm,
+    //   ElFormItem,
+    //   ElInput,
     OPagination,
   },
   props: {

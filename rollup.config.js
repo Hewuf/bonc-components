@@ -15,11 +15,11 @@ export default {
       file: "dist/index.esm.js",
       format: "es",
     },
-    {
-      file: "dist/index.umd.js",
-      format: "umd",
-      name: "bonc-components",
-    },
+    // {
+    //   file: "dist/index.umd.js",
+    //   format: "umd",
+    //   name: "bonc-components",
+    // },
   ],
   plugins: [
     vuePlugin({ version: 2 }),
@@ -29,6 +29,7 @@ export default {
     alias({
       entries: [
         { find: "@", replacement: path.resolve(__dirname, "src") },
+        { find: "@packages", replacement: path.resolve(__dirname, "./packages") },
       ]
     })],
 };

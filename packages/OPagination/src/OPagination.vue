@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { scrollTo } from "@/script/scrollTo.js";
+import { scrollTo } from "@/utils/scrollTo";
 
 export default {
   name: "OPagination",
